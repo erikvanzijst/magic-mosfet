@@ -4,7 +4,7 @@ all: sim
 
 magic:
 	# for rcfile to work PDKPATH must be set correctly
-	magic -rcfile sky130A.magicrc $(NAME).mag
+	magic -rcfile sky130A.magicrc -d OGL $(NAME).mag
 	# now in the command window type:
 	# extract
 	# ext2spice lvs
